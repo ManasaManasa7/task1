@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 15px 20px;
+    font-weight: 700;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.submain{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    animation: submain 2s ease-in-out;
+}
+@keyframes submain{
+    0%{
+        transform: translateX(-50%);
+    }
+}
+.submain h1{
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 7px;
+}
+.submain h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    color: rgb(247, 27, 23);
+}
+.submain p{
+    font-size: 15px;
+    margin-bottom: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.submain button{
+    padding: 15px 30px;
+    background-color:black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button:hover{
+    background: red ;
+}
+.image{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 8%;
+    z-index: -1;
+}
+img{
+    width: 30rem;
+    animation: shinchan 5s ease-in-out;
+}
+@keyframes shinchan{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-220%);
+
+    }
+}
+@media screen and (max-width:1200px){
+    .submain{
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 10rem;
+    }
+}
+@media screen and (max-width:576px){
+    .submain{
+        width: 100%;
+        text-align: center;
+    }
+    .submain h1{
+        margin-bottom: 5%;
+    }
+    .submain h3{
+        margin-bottom: 5%;
+    }
+    .submain p{
+        margin-bottom: 5%;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 20rem;
+    }
+}
+
